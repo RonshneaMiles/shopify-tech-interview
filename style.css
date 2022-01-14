@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+        background: url('./images/universe-gf02ad0a61_1920.jpg');
+    background-size: cover;
+}
+
+#app {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width:1100px) {
+    #header {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+}
+
+.title {
+    color: black;
+    font-size: 50px;
+    float: left;
+}
+
+.split {
+    width: 50%;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-input {
+flex: 2;
+    height: 35px;
+    border: 1px solid;
+}
+
+#search-btn {
+    flex: 1;
+    height: 35px;
+    background: #14815d;
+    font-size: 16px;
+    border: 2px solid black;
+    color: black;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+#search-btn:hover {
+    border: 2px solid white;
+    background: #1fc572;
+    color: white;
+}
+
+#introduction {
+    width: 50%;
+    color: white;
+    font-size: 40px;
+}
+
+#loader {
+    display: none;
+}
+
+.content-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 400px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: #ecd5b7ad;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 80%;
+    height: 40%;
+}
+
+#content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.clicked {
+    background: red;
+    color: white;
+    width: 30%;
+    height: 25px;
+    font-size: 15px;
+}
+
+.unclicked {
+    width: 30%;
+    height: 25px;
+    font-size: 15px;
+}
